@@ -8,14 +8,14 @@ public class Exercise01 {
 		//Create a new Scanner
 		Scanner reader = new Scanner(System.in);
 				
-		//Declared a variable for the number that the user will introduce
+		//Declare a variable for the number that the user will introduce
 		double num;
 				
-		//Ask the number
+		//Ask the decimal number
 		System.out.println("Introduzca un número decimal:");
 		num = reader.nextDouble();
 		
-		//
+		//Round the number
 		num = (int) (num + 0.5);
 		
 		//Write the message and the number

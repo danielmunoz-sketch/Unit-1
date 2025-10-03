@@ -8,27 +8,25 @@ public class Exercise07 {
 		//Create a new Scanner
 		Scanner reader = new Scanner(System.in);
 				
-		//
+		//Declare the variables 
 		int numNiñ;
 		int numAd;
 		double precioTotal;
 		double descuento;
 		double precioSinDes;
 		
-		//
+		//Ask the number of childs and adults
 		System.out.println("Introduce el número de niños: ");
 		numNiñ = reader.nextInt();
-				
-		//
 		System.out.println("Introduce el número de adultos: ");
 		numAd = reader.nextInt();
 				
-		//
+		//Calculate the prices
 		precioSinDes = (numNiñ*15.5) + numAd*20;
 		descuento = precioSinDes > 100 ? precioSinDes*0.05 : 0;
 		precioTotal = precioSinDes - descuento;
 				
-		//
+		//Show the total price
 		System.out.println("El precio sería de: " + precioTotal + " €");
 				
 		//Close the Scanner

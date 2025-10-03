@@ -8,7 +8,7 @@ public class Exercise03 {
 		//Create a new Scanner
 		Scanner reader = new Scanner(System.in);
 				
-		//Declared a variable for the number that the user will introduce
+		//Declare the variables for the numbers that the user will introduce
 		int num1;
 		int num2;
 		int resto;
@@ -20,7 +20,7 @@ public class Exercise03 {
 		System.out.println("Introduzca otro número entero:");
 		num2 = reader.nextInt();
 		
-		//
+		//set the condition if the number is not a multiple of the second number give the value numSumar the number needed so that the entered number is a multiple of the second number
 		resto= num1%num2;
 		numSumar= (resto == 0) ? 0 : (num2-resto);
 				
